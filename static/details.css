@@ -1,0 +1,80 @@
+/*product list */
+.productList .product-list-title{
+    font-size: 3rem;
+    margin: 40px 0;
+    font-weight: normal;
+}
+.productList .product-list-sidebar{
+    margin-right: 100px;
+    flex-basis: 30%;
+}
+.product-list-wrapper .product-list-sidebar a{
+     padding: 0.5rem 1.5rem;
+     font-size: 1.2rem;
+     color: black;
+     border-bottom: 1px solid var(--blue-gray);
+     background-color: #f8f9fa;
+}
+.product-list-wrapper .product-list-sidebar a:last-child{
+    border-bottom:none ;
+}
+#categoryList{
+    margin-bottom: 1rem;
+}
+.product-list-wrapper .product-list-sidebar a :hover{
+    background-color: var(--blue-gray);
+    font-weight: bold;
+}
+#price-filter-label-min{
+    margin-left: 0.5rem,
+}
+.product-list-sidebar .sidebar-title{
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+.sidebar-search{
+    margin-bottom: 1rem;
+}
+.product-list-box{
+    flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+.product-list-box .product-item {
+    width: calc(30% - 2%); /* Adjusted width calculation */
+    margin-right: 2%;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 5px var(--blue-gray);
+    padding: 0.5rem;
+    height: 250px; /* Fixed height for all product items */
+                   /* Prevents price from overflowing */
+}
+.product-list-box .product-item img{
+    width: 100%;
+    height: 200px; /* Adjust the aspect ratio */
+    object-fit:cover; /* Maintain aspect ratio and cover container */
+}
+.product-list-box .product-item .product-name{
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    color: black;
+    padding: 0.75rem 0;
+    min-height: 50px; /* Ensures a minimum height for product name */
+
+}
+
+.product-list-box .product-item :nth-child(3n){
+    margin-right : 0;
+}
+.product-list-box .product-item:hover {
+    box-shadow: 0px 4px 10px var(--blue-gray);
+    transition: box-shadow 0.15s linear 0s;
+}
+
+
+
+/*  preview */

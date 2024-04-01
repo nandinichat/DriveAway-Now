@@ -1,0 +1,157 @@
+.home-title{
+    margin-top: 3rem;
+    letter-spacing: .8rem;
+    font-size: 2.3rem;
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0%;
+}
+.first-image,.second-image{
+    background-position: center ;
+    background-size: cover ;
+    background-attachment: fixed;    /* MAIN APPLICATION IN PARALLEX*/
+}
+
+.first-image{
+    background-image:url(car4.jpg) ;
+    min-height: 500px;
+}
+.second-image{
+    background-image:url(car6.jpg) ;
+    min-height: 500px;
+}
+
+section{
+    text-align: center;
+    padding: 3rem 5rem;
+}
+.section-light{
+     background-color: aliceblue;
+     color: white;
+}
+.section-dark{
+    background-color: aliceblue;
+    color: white;
+    margin-bottom: none;
+}
+
+.image{
+    position: relative;;
+}
+.image div{
+    position:absolute;
+    top:50%;
+    width: 100% ;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.first-image span {
+    color: white;
+    padding: 40px;
+
+}
+
+
+.why-choose-us {
+    margin: none;
+  }
+  
+  .container {
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+  }
+  
+  .feature {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: var(--blue-gray);
+    border:  2px solid white;
+    box-shadow: 4px 4px 2px #9ac0fc;
+    border-radius: 10px;
+    }
+   .feature i {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color:#fff;
+    }
+    .feature .indian-rupee { /* Target both font-awesome icons and the Indian Rupee span */
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #fff; /* Change icon color to white */
+      }
+      
+   .feature h3 {
+        font-size: 24px;
+        color: white;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    }
+      
+    .feature p {
+        font-size: 16px;
+        color: black;
+    }
+
+
+    
+    .customer-reviews {
+        background-color: white;
+        padding: 50px 0;
+      }
+      
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      
+      .review {
+        display: flex;
+        margin-bottom: 40px;
+      }
+      
+      .avatar {
+        flex: 0 0 80px;
+        margin-right: 20px;
+      }
+      
+      .avatar img {
+        width: 100%;
+        border-radius: 50%;
+      }
+      
+      .review-content {
+        flex: 1;
+      }
+      
+      .review-content h3 {
+        color: #333;
+        margin-bottom: 5px;
+      }
+      
+      /* Style for rating stars */
+      .rating {
+        color: #ffc107;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+            
+      
+      

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveAway Now</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'common.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'confirmed.css' %}">
+</head>
+<body>
+    
+    <!-- Header -->
+    <nav id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header-wrapper d-flex justify-content-between">
+                    <div class="logo d-inline-block">
+                        <a href="{% url 'home' %}" class="text-decoration-none">DriveAway Now</a>
+                    </div>
+                    <div class="user-actions d-flex flex-row">
+                        <a href="{% url 'details' %}">Booking</a>
+                        <div class="user-intro" id="userIntro">
+                            <a href="{% url 'login' %}">User Login</a>
+                        </div>
+                        <div class="logout-btn" id="logoutBtn">Log out</div>                   
+                </div> 
+            </div>
+        </div>
+      </div>
+   </nav>
+ <!--confirmation page-->
+
+ <div class="confirmed-container">
+    <div class="confirmation">
+        <h1>Booking Confirmed!</h1>
+        <p>Your rental car booking has been successfully confirmed.</p>
+        <div class="booking-details">
+            <h2>Booking Details</h2>
+            <ul>
+                <li><strong>Pickup Location:</strong> {{ booking.pickup_location }}</li>
+                <li><strong>Drop-off Location:</strong> {{ booking.dropoff_location }}</li>
+                <li><strong>Pickup Date:</strong> {{ booking.pickup_date }}</li>
+                <li><strong>Drop-off Date:</strong> {{booking.dropoff_date }}</li>
+            </ul>
+        </div>
+        <p>Thank you for choosing our car rental service. We look forward to serving you!</p>
+    </div>
+</div>
+   <!-- Footer -->
+   <footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Contact Us</h3>
+                <ul class="social-info">
+                    <li>123 Drive Street</li>
+                    <li>City, State ZIP</li>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Email: info@example.com</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+

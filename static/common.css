@@ -1,0 +1,71 @@
+:root{
+    --blue-gray: #4287f5;
+    --pale-gray: #675078;
+    --mid-gray: #6b5d75;
+    --jean-gray: #645a85;
+   }
+   html{
+       box-sizing: border-box;
+   }
+   *,*::after,*::before{
+       box-sizing: inherit;
+   }
+   #header {
+       background-color: var(--blue-gray);
+       padding: 1.1rem 0;
+   }
+   #header .header-wrapper .logo{
+       font-size: 1.5rem;
+       line-height: 1.5;
+   }
+   #header .header-wrapper .logo a {
+       color: white;
+       letter-spacing: 7px;
+   }
+   #header .header-wrapper .user-actions {
+       font-size: 1rem ;
+       line-height: 1.5 ;
+       gap: 1rem ;
+   }
+   #header .header-wrapper .user-actions .logout-btn{
+       cursor: pointer;
+   }
+   #header .header-wrapper .user-actions a{
+       color: black;
+   }
+   #header .header-wrapper .user-actions a:hover{
+       text-decoration-line: underline;
+   }
+
+
+
+   #footer {
+    background-color: var(--blue-gray);
+    padding: 50px 0;
+}
+
+#footer h3 {
+    color: #fff;
+}
+
+
+#footer ul li {
+    margin-bottom: 10px;
+}
+.social-info{
+    list-style:disc ;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    color: black;
+    font-size: 30px;
+}
+
+.social-icons li a:hover {
+    color: #ffc107; /* change color on hover */
+}
